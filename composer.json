@@ -1,0 +1,26 @@
+{
+    "name": "afpa/taxi-calculator",
+    "description": "Projet d'entraînement au développement PHP",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^12.3"
+    },
+    "license": "Attribution-NonCommercial-ShareAlike 4.0 International",
+    "autoload": {
+        "psr-4": {
+            "Afpa\\TaxiCalculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ludovic Esperce",
+            "email": "ludovic.esperce@afpa.fr"
+        }
+    ],
+    "require": {}
+}

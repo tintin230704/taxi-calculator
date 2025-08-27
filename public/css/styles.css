@@ -1,0 +1,196 @@
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styles sur les tarifs */
+.prices-info {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.prices-info h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.prices-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+#prices {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Styles s'appliquant au formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Styles pour la date */
+#date-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* uniquement pour la date */
+#date-input {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+/* CSS dédié au radiobutton */
+fieldset {
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    padding: 15px;
+    background: #f9fbfc;
+}
+
+legend {
+    font-weight: 600;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group input[type="radio"] {
+    display: none; /* On cache le cercle du radiobutton par défaut */
+}
+
+.radio-group .radio-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ecf0f1;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #2c3e50;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.radio-group input[type="radio"]:checked + .radio-button {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.radio-group .radio-button:hover {
+    background: #dfe6e9;
+}
+
+/* Styles pour les checkboxes */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox input {
+    accent-color: #3498db;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2980b9, #20638f);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result styling */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #5bd56d;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+#result p {
+    margin: 8px 0;
+}
