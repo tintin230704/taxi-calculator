@@ -10,7 +10,9 @@ Voici un apperçu de l'interface graphique :
 
 > [!NOTE]  
 > L'application n'est pas encore pleinement fonctionnelle.
+>
 > Ce dépôt contient le code à compléter afin d'implémenter la méthode de calcul.
+>
 > Lisez la suite de ce `README.md` pour en apprendre plus.
 
 ## Règles tarifaires
